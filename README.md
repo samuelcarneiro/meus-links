@@ -1,12 +1,15 @@
 <h1 align="center"> Meu Cartão de Visitas - Online</h1>
 
+<p align="center">
+  <a href="https://samuelcarneiro.github.io/cartao-visitas-online/">Clique aqui para acessar o site</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+<br>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
-
-<br>
 
 <p align="center">
   <img alt="screenshots da pagina inicial do projeto" src=".github/preview.png" width="100%">
