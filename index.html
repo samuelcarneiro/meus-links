@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+    <!-- Fonte Inter Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..500&display=swap" rel="stylesheet">
+    <!-- / Fonte Inter Google -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevLinks</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+    <main>
+        <div id="container">
+            <div class="profile">
+                <img src="./img/perfil.jpg" alt="Foto do Samuel">
+                <p>@samuelcarneiro</p>
+            </div>
+            <!-- /profile -->
+
+            <!-- Quando o usuário clicar no botão será chamada a função toggleMode() -->
+            <div id="switch" onclick="toggleMode()">
+                <button></button>
+                <span></span>
+            </div>
+            <!-- /switch -->
+
+            <ul>
+                <li>
+                    <a href="https://instagram.com/samu3lc_" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://github.com/samuelcarneiro" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/samuel-carneiro-almeida-ab4ba5277/" target="_blank">LinkedIn</a>
+                </li>
+                <!-- <li>
+                    <a href="#" target="_blank">Portfólio</a>
+                </li> -->
+            </ul>
+            <!-- / Lista de Links -->
+            
+            <div id="social-links">
+                <a href="https://github.com/samuelcarneiro" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+
+                <a href="https://instagram.com/samu3lc_" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+
+                <a href="https://www.linkedin.com/in/samuel-carneiro-almeida-ab4ba5277/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>    
+            </div>
+            <!-- /social-links -->
+
+            <footer>
+                Feito com <ion-icon name="heart"></ion-icon> pela <a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a> | Discover
+            </footer>
+        </div>
+        <!-- /container -->
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

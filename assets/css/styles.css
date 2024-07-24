@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/* Reset do CSS padrão do browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+    color: #FAFAFA;
+}
+
+:root {
+    /* Cores padrões do darkmode */
+    --text-color: #FFF;
+    --bg-url: url(../img/bg-mobile.jpg);
+    --stroke-color: rgba(255, 255, 255, .5);
+    --surface-color: rgba(255, 255, 255, .1);
+    --surface-color-hover: rgba(255, 255, 255, .05);
+    --highlight-color: rgba(255, 255, 255, .2);
+    --switch-bg-url: url(../img/moon-stars.svg);
+}
+
+.light {
+    /* Cores padrões do lightmode */
+    --text-color: #000;
+    --bg-url: url(../img/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, .5);
+    --surface-color: rgba(0, 0, 0, .05);
+    --surface-color-hover: rgba(0, 0, 0, .02);
+    --highlight-color: rgba(0, 0, 0, .2);
+    --switch-bg-url: url(../img/sun.svg);
+}
+/* Usam a mesma variável - com valores diferentes nos modos */
+
+body {
+    background-image: var(--bg-url);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+body * {
+    color: var(--text-color);
+}
+
+#container {
+    width: 100%;
+    max-width: 580px;
+    margin: 56px auto 0;
+    /* 56px em cima, auto nas laterais, 0 embaixo */
+    padding: 0 24px;
+}
+
+/* Estilização da div profile */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 112px;
+    border-radius: 50%;
+    border: 3px solid  var(--stroke-color);
+}
+
+.profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/* SWITCH */
+#switch {
+    padding: 16px 0;
+    position: relative; /* para que o button fique absoluto dentro do switch */
+    width: 64px;
+
+    /* Como o switch é display block, alinhar ao centro com o margin auto */
+    margin: 4px auto;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: #FFF var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+
+    position: absolute; /* dentro do switch */
+    top: 50%; /* com o transform vai ficar exatamente no centro */
+    left: 0;
+    z-index: 1; /* ficar na frente|sobre */
+    transform: translateY(-50%);
+
+    animation: slide-back .4s;
+}
+
+#switch span {
+    display: block; /* para o span aceitar altura e largura */
+    width: 64px;
+    height: 24px;
+
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
+.light #switch button {
+    /* Por que o .light está em primeiro? Porque a classe está no html
+     * e só será ativada quando a .light estiver ativa */
+    /* right: 0; */
+    /* left: initial; */
+    animation: slide-in .4s forwards; /* manter as propriedades finais do slide-in */
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
+}
+
+/* LINKS */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+ul li a {
+    display: flex; /* Faz com que o <a> ocupe toda a <li>*/
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: .5em;
+
+    backdrop-filter: blur(4px); /*Efeito Blur*/
+    -webkit-backdrop-filter: blur(4px); /*compatibilidade*/
+
+    transition: background .2s;
+}
+
+ul li a:hover {
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+}
+
+/* Social links */
+#social-links {
+    display: flex;
+    justify-content: center;
+
+    padding: 24px 0;
+
+    font-size: 1.5em;
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 50%;
+
+    transition: background .2s;
+}
+
+#social-links a:hover {
+    background-color: var(--highlight-color);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Media queries */
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(../img/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(../img/bg-desktop-light.jpg);
+    }
+}
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
+}
