@@ -15,3 +15,8 @@ function toggleMode() {
     html.classList.toggle('light')
     // Se tiver a classe light ele tira. Se não tiver a classe light, ele coloca
 }
+
+/* Mostrar ano atual no footer */
+const ano = document.getElementById("mostrarAnoAtual");
+const anoAtual = new Date();
+ano.innerHTML = anoAtual.getFullYear();
