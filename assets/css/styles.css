@@ -10,7 +10,7 @@
     color: #FAFAFA;
 }
 
-:root {
+.dark {
     /* Cores padrões do darkmode */
     --text-color: #FFF;
     --bg-url: url(../img/bg-mobile.jpg);
