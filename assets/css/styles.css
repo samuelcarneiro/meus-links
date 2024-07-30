@@ -13,7 +13,7 @@
 .dark {
     /* Cores padrões do darkmode */
     --text-color: #FFF;
-    --bg-url: url(../img/bg-mobile.jpg);
+    --bg: #0D1117;
     --stroke-color: rgba(255, 255, 255, .5);
     --surface-color: rgba(255, 255, 255, .1);
     --surface-color-hover: rgba(255, 255, 255, .05);
@@ -24,7 +24,7 @@
 .light {
     /* Cores padrões do lightmode */
     --text-color: #000;
-    --bg-url: url(../img/bg-mobile-light.jpg);
+    --bg: #EEE;
     --stroke-color: rgba(0, 0, 0, .5);
     --surface-color: rgba(0, 0, 0, .05);
     --surface-color-hover: rgba(0, 0, 0, .02);
@@ -34,11 +34,12 @@
 /* Usam a mesma variável - com valores diferentes nos modos */
 
 body {
-    background-image: var(--bg-url);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    height: 100vh;
+    /* background-image: var(--bg-url); */
+    /* background-repeat: no-repeat; */
+    /* background-position: top center; */
+    /* background-size: cover; */
+    background: var(--bg);
+    
 }
 
 body * {
@@ -128,7 +129,8 @@ ul {
     gap: 1em;
 }
 
-ul li a {
+ul li a,
+.voltar a {
     display: flex; /* Faz com que o <a> ocupe toda a <li>*/
     justify-content: center;
     align-items: center;
@@ -147,7 +149,8 @@ ul li a {
     transition: background .2s;
 }
 
-ul li a:hover {
+ul li a:hover,
+.voltar a:hover {
     background: var(--surface-color-hover);
     border: 1.5px solid var(--text-color);
 }
@@ -180,6 +183,7 @@ ul li a:hover {
 footer {
     text-align: center;
     font-size: 14px;
+    padding: 2em 0;
 }
 
 /* Media queries */
@@ -212,3 +216,36 @@ footer {
 }
 
 /* PÁGINA MEUS PROJETOS */
+.projetos .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.projetos .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--stroke-color);
+    border-radius: .5em;
+}
+
+.projetos .cards .card .links {
+    padding: 1em 0;
+}
+
+.projetos .cards .card .links a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.projetos img {
+    width: 100%;
+    border-radius: .5em;
+}
+
+.voltar {
+    margin-top: 1em;
+}
