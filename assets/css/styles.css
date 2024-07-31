@@ -239,11 +239,17 @@ footer {
 .projetos .cards .card .links a {
     text-decoration: none;
     font-weight: 500;
-}
+    padding: .5em 0;
+    cursor: pointer;
+} 
+
+.projetos .cards .card .links a:hover {
+    text-decoration: underline 3px var(--stroke-color);
+} 
 
 .projetos img {
     width: 100%;
-    border-radius: .5em;
+    border-radius: .5em .5em 0 0;
 }
 
 .voltar {
