@@ -306,6 +306,5 @@ footer {
 
 .indicacoes-list p {
     font-size: 2em;
-    color: #FAFAFA;
-    text-shadow: 2px 2px 3px #999;
+    color: var(--text-color);
 }
