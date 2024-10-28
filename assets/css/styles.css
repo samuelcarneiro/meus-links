@@ -227,8 +227,13 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    box-shadow: 1px 1px 5px #DDD;
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
 
+    img {
+        border-radius: 8px;
+    }
+    
     .description {
         display: flex;
         flex-direction: column;
