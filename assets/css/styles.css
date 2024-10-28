@@ -25,7 +25,7 @@
     /* Cores padrões do lightmode */
     --text-color: #2A2A2A;
     /* --bg: rgba(0, 0, 0, .05); */
-    --bg: linear-gradient(180deg, #E7F0FD -6.25%, #244C7B 110.11%);
+    --bg: #FAFAFA;
     --stroke-color: rgba(0, 0, 0, .5);
     --surface-color: rgba(0, 0, 0, .05);
     --surface-color-hover: rgba(0, 0, 0, .02);
@@ -84,7 +84,7 @@ body * {
 #switch button {
     width: 32px;
     height: 32px;
-    background: #E7F0FD var(--switch-bg-url) no-repeat center;
+    background: #FFF var(--switch-bg-url) no-repeat center;
     border: 0;
     border-radius: 50%;
 
@@ -224,7 +224,7 @@ footer {
 }
 
 .projetos .cards .card {
-    background-color: var(--bg);
+    /* background-color: var(--bg); */
     display: flex;
     flex-direction: column;
     padding: 1em;
