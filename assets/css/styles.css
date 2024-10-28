@@ -24,7 +24,8 @@
 .light {
     /* Cores padrões do lightmode */
     --text-color: #2A2A2A;
-    --bg: rgba(0, 0, 0, .05);
+    /* --bg: rgba(0, 0, 0, .05); */
+    --bg: linear-gradient(180deg, #E7F0FD -6.25%, #244C7B 110.11%);
     --stroke-color: rgba(0, 0, 0, .5);
     --surface-color: rgba(0, 0, 0, .05);
     --surface-color-hover: rgba(0, 0, 0, .02);
