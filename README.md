@@ -1,7 +1,7 @@
-<h1 align="center"> Meu Cartão de Visitas - Online</h1>
+<h1 align="center"> Meus Links </h1>
 
 <p align="center">
-  <a href="https://samuelcarneiro.github.io/cartao-visitas-online/">Clique aqui para acessar o site</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://samuelcarneiro.github.io/meus-links/">Clique aqui para acessar o site</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
