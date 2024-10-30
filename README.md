@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="screenshots da pagina inicial do projeto" src=".github/preview.png" width="100%">
+  <img alt="screenshots da pagina inicial do projeto" src=".github/preview-meus-links-cover.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -24,4 +24,4 @@
 
 ## 💻 Projeto
 
-Cartão de Visitas online (agregador de links) desenvolvido no curso Discover da Rocketseat.
+Projeto desenvolvido como forma de prática de desenvolvimento front-end pessoal. No site é possível visualizar meus projetos, redes sociais e canais do Youtube que recomendo.
