@@ -1,7 +1,7 @@
-<h1 align="center"> Meu Cartão de Visitas - Online</h1>
+<h1 align="center"> Meus Links </h1>
 
 <p align="center">
-  <a href="https://samuelcarneiro.github.io/cartao-visitas-online/">Clique aqui para acessar o site</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://samuelcarneiro.github.io/meus-links/">Clique aqui para acessar o site</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="screenshots da pagina inicial do projeto" src=".github/preview.png" width="100%">
+  <img alt="screenshots da pagina inicial do projeto" src=".github/preview-meus-links-cover.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -24,4 +24,4 @@
 
 ## 💻 Projeto
 
-Cartão de Visitas online (agregador de links) desenvolvido no curso Discover da Rocketseat.
+Projeto desenvolvido como forma de prática de desenvolvimento front-end pessoal. No site é possível visualizar meus projetos, redes sociais e canais do Youtube que recomendo.
