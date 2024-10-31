@@ -27,9 +27,9 @@
     /* --bg: rgba(0, 0, 0, .05); */
     --bg: #FAFAFA;
     --stroke-color: rgba(0, 0, 0, .5);
-    --surface-color: rgba(0, 0, 0, .05);
-    --surface-color-hover: rgba(0, 0, 0, .02);
-    --highlight-color: rgba(0, 0, 0, .2);
+    --surface-color: rgba(0, 0, 0, .01);
+    --surface-color-hover: rgba(0, 0, 0, .04);
+    --highlight-color: rgba(0, 0, 0, .1);
     --switch-bg-url: url(../img/sun.svg);
 }
 /* Usam a mesma variável - com valores diferentes nos modos */
