@@ -159,6 +159,7 @@ ul li a,
 
 ul li a:hover,
 .voltar a:hover {
+    transition: .3s;
     background: var(--surface-color-hover);
     border: 1.5px solid var(--text-color);
 }
