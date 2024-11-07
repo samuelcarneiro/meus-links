@@ -12,12 +12,15 @@
 
 .dark {
     /* Cores padrões do darkmode */
-    --text-color: #FFF;
-    --bg: #2a2a2a;
-    --stroke-color: rgba(255, 255, 255, .5);
-    --surface-color: rgba(255, 255, 255, .1);
+    --text-color: #D1D7E0;
+    --bg: #212830;
+    /* --stroke-color: rgba(255, 255, 255, .5); */
+    --stroke-color: #3D444D;
+    /* --surface-color: rgba(255, 255, 255, .1)*/
+    --surface-color: #2F3742;
     --surface-color-hover: rgba(255, 255, 255, .05);
-    --highlight-color: rgba(255, 255, 255, .2);
+    /* --highlight-color: rgba(255, 255, 255, .2); */
+    --highlight-color: #3D444D;
     --switch-bg-url: url(../img/moon-stars.svg);
 }
 
@@ -122,6 +125,10 @@ body * {
 }
 
 /* LINKS */
+.links-home {
+    width: 70%;
+}
+
 ul {
     list-style: none;
     display: flex;
