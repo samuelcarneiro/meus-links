@@ -172,10 +172,7 @@ ul li a:hover,
 #social-links {
   display: flex;
   justify-content: center;
-
   padding: 24px 0;
-
-  font-size: 1.5em;
 }
 
 #social-links a {
@@ -184,7 +181,6 @@ ul li a:hover,
   justify-content: center;
   padding: 0.8em;
   border-radius: 50%;
-
   transition: background 0.2s;
 }
 
@@ -192,11 +188,15 @@ ul li a:hover,
   background-color: var(--highlight-color);
 }
 
+ion-icon {
+    font-size: 1.5rem;
+}
+
 /* FOOTER */
 footer {
   text-align: center;
-  font-size: 1em;
-  padding: 2em 0;
+  font-size: 1rem;
+  padding: 2rem 0;
 }
 
 /* Media queries */
