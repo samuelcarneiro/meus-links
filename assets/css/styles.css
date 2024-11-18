@@ -148,7 +148,7 @@ ul li a,
   align-items: center;
   padding: 1em;
 
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
 
   background: var(--surface-color);
