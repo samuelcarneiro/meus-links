@@ -24,7 +24,7 @@ if (savedTheme) {
     html.classList.add(savedTheme);
 } else {
     // Se não houver preferência armazenada, aplicar um tema padrão
-    html.classList.add('light');
+    html.classList.add('dark');
 }
 
 
