@@ -3,12 +3,12 @@ function toggleMode() {
     const html = document.documentElement
 
     //Se no document html contém a classe light
-    if(html.classList.contains('dark')) {
-        html.classList.replace('dark', 'light')
-        localStorage.setItem('theme', 'light')
-    } else {
+    if(html.classList.contains('light')) {
         html.classList.replace('light', 'dark')
         localStorage.setItem('theme', 'dark')
+    } else {
+        html.classList.replace('dark', 'light')
+        localStorage.setItem('theme', 'light')
     }
 
     // A função toggle já faz o que foi declarado na função a cima...
